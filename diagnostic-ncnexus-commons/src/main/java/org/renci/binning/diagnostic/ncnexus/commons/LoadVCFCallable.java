@@ -88,11 +88,12 @@ public class LoadVCFCallable extends AbstractLoadVCFCallable {
     public File getVCF(String participant) throws BinningException {
         logger.debug("ENTERING getVCF(String)");
         Map<String, String> avuMap = new HashMap<String, String>();
+        avuMap.put("ParticipantId", participant);
         avuMap.put("MaPSeqStudyName", "NCNEXUS");
         avuMap.put("MaPSeqWorkflowName", "NCNEXUSVariantCalling");
         avuMap.put("MaPSeqJobName", "GATKVariantAnnotator");
         avuMap.put("MaPSeqMimeType", "TEXT_VCF");
-        String irodsFile = IRODSUtils.findFile(participant, avuMap);
+        String irodsFile = IRODSUtils.findFile(avuMap);
         String participantDir = String.format("%s/annotation/NCNEXUS/%s", binningDirectory, participant);
         File vcfFile = IRODSUtils.getFile(irodsFile, participantDir);
         return vcfFile;

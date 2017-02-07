@@ -1,0 +1,4 @@
+org.renci.binning.diagnostic.ncnexus.commands
+org.renci.binning.diagnostic.ncnexus.commons
+org.renci.binning.diagnostic.ncnexus.executor
+org.renci.binning.diagnostic.ncnexus.ws

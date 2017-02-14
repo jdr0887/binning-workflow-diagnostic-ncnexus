@@ -1,0 +1,8 @@
+org.renci.canvas.binning.diagnostic.ncnexus.commands.AnnotateVariantsAction
+org.renci.canvas.binning.diagnostic.ncnexus.commands.CreateBinningJobAction
+org.renci.canvas.binning.diagnostic.ncnexus.commands.GenerateReportAction
+org.renci.canvas.binning.diagnostic.ncnexus.commands.ListJobsAction
+org.renci.canvas.binning.diagnostic.ncnexus.commands.LoadCoverageAction
+org.renci.canvas.binning.diagnostic.ncnexus.commands.LoadVCFAction
+org.renci.canvas.binning.diagnostic.ncnexus.commands.UpdateDiagnosticBinsAction
+org.renci.canvas.binning.diagnostic.ncnexus.commands.UpdateFrequenciesAction

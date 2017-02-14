@@ -1,13 +1,13 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <parent>
-    <groupId>org.renci.binning</groupId>
+    <groupId>org.renci.canvas</groupId>
     <artifactId>binning</artifactId>
-    <version>0.0.35</version>
+    <version>0.0.38</version>
   </parent>
-  <name>Binning :: Workflow :: Diagnostic NCNEXUS</name>
+  <name>CANVAS :: Binning :: Diagnostic NCNEXUS Workflow</name>
   <modelVersion>4.0.0</modelVersion>
-  <groupId>org.renci.binning.workflows</groupId>
-  <artifactId>diagnostic-ncnexus</artifactId>
+  <groupId>org.renci.canvas.binning</groupId>
+  <artifactId>diagnostic-ncnexus-workflow</artifactId>
   <version>0.0.15-SNAPSHOT</version>
   <packaging>pom</packaging>
   <properties>
@@ -33,22 +33,22 @@
   <dependencyManagement>
     <dependencies>
       <dependency>
-	<groupId>org.renci.binning.workflows.diagnostic-ncnexus</groupId>
-	<artifactId>diagnostic-ncnexus-commons</artifactId>
+	<groupId>org.renci.canvas.binning.diagnostic-ncnexus-workflow</groupId>
+	<artifactId>diagnostic-ncnexus-workflow-commons</artifactId>
 	<version>0.0.15-SNAPSHOT</version>
       </dependency>
       <dependency>
-	<groupId>org.renci.binning.workflows.diagnostic-ncnexus</groupId>
-	<artifactId>diagnostic-ncnexus-executor</artifactId>
+	<groupId>org.renci.canvas.binning.diagnostic-ncnexus-workflow</groupId>
+	<artifactId>diagnostic-ncnexus-workflow-executor</artifactId>
 	<version>0.0.15-SNAPSHOT</version>
       </dependency>      
     </dependencies>
   </dependencyManagement>
   <modules>
-    <module>diagnostic-ncnexus-features</module>
-    <module>diagnostic-ncnexus-commons</module>
-    <module>diagnostic-ncnexus-commands</module>
-    <module>diagnostic-ncnexus-executor</module>
-    <module>diagnostic-ncnexus-ws</module>
+    <module>diagnostic-ncnexus-workflow-features</module>
+    <module>diagnostic-ncnexus-workflow-commons</module>
+    <module>diagnostic-ncnexus-workflow-commands</module>
+    <module>diagnostic-ncnexus-workflow-executor</module>
+    <module>diagnostic-ncnexus-workflow-ws</module>
   </modules>
 </project>
